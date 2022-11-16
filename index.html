@@ -2,45 +2,56 @@
 
 <head>
   <meta charset=utf-8>
-  <title>My Data App</title>
+  <title>Scores</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
   <div id="container">
     <div id="main">
-      <h1 class="content">My Data App</h1>
-
+      <div class="row">
+        <div class="item-meta">
+          <div class="row">
+            <div class="item meta">
+                <select id="data-filter">
+                  <option value="live">Live Scores</option>
+                  <option value="future">Fixtures</option>
+                  <option value="ended">Resultes</option>
+                </select>
+            </div>
+            <div class="item-meta">
+                <select id="data-sort">
+                  <option value="newest">Ascending</option>
+                  <option value="oldest">Descending</option>
+                </select>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="content">
+          <p><img src="favicon.ico" class="logo" alt="basketball" height="20" weight="20">
+            2022/2023</p>
+        </div>
+      </div>
+      
+      
       <div id="app" class="row">
-
         <!-- Start example showing the css layout -->
-        <div class="item">
+        <!-- <div class="item"> -->
           <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
+            <h2>Loading...</h2>
           </div>
-        </div>
+        <!-- </div> -->
 
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
 
-        <div class="item">
-          <div class="content">
-            <h2>Example Heading</h2>
-            <p>Example text.</p>
-          </div>
-        </div>
         <!-- End example showing the css layout -->
 
         <template id="item-template">
           <div class="item">
             <div class="content">
-              <h2>Example Heading</h2>
-              <p>Example text.</p>
+              <!-- data -->
             </div>
           </div>
         </template>
